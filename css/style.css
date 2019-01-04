@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.firstfield {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kiwi-tag {
+  fill:orange;
+}
+.lake {
+  fill:blue;
+}
+
+.kiwi-object {
+  width: 150px;
+}
+
+.kiwi-base64 {
+  width: 150px;
+}
+
+.circle-anim {
+  animation-duration: 2s;
+  animation-name: circleanim;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+  @keyframes circleanim {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(360deg);
+    }
+  }
