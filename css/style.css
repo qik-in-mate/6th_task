@@ -36,3 +36,35 @@ body {
       transform: rotate(360deg);
     }
   }
+
+.fourthfield {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+@media all and (min-width: 1800px) {
+  .svg-resp {
+    width: 800px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 1800px) and (min-width: 1201px)  {
+  .svg-resp {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media all and (max-width: 1200px) and (min-width: 961px)  {
+  .svg-resp {
+    width: 500px;
+    height: 250px;
+  }
+}
+@media all and (max-width: 960px) and (min-width: 769px)  {
+  .svg-resp {
+    width: 400px;
+    height: 200px;
+  }
+}
+
