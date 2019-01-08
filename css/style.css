@@ -1,10 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding-left: 5px;
 }
 .firstfield {
   display: flex;
   flex-wrap: wrap;
+}
+.firstfield > svg {
+  padding: 1px;
 }
 .kiwi-tag {
   fill:orange;
@@ -18,6 +21,7 @@ body {
 .kiwi-base64 {
   width: 150px;
 }
+/*for 3*/
 .circle-anim {
   animation-duration: 2s;
   animation-name: circleanim;
@@ -33,12 +37,6 @@ body {
     }
   }
 /*for 4*/
-.fourthfield {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
 @media all and (min-width: 1800px) {
   .svg-resp {
     width: 800px;
@@ -76,6 +74,9 @@ body {
   background: #9e54bd;
   position: relative;
   z-index: 5;
+}
+.svg {
+  cursor: pointer;
 }
 .btn {
   background: none;
@@ -123,4 +124,11 @@ body {
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 700;
+}
+
+.thanks {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  color: #3351a2;
 }
