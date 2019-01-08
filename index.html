@@ -70,5 +70,33 @@
         <circle cx="50%" cy="50%" r="25%" fill="#ffff00" stroke-width="10" stroke-dasharray="0.2 0.2" stroke="#ffd700"/>
       </svg>
     </div>
+    <h2>4. Responsive SVG</h2>
+    <p>This is my CSS button</p>
+    <div class="container">
+      <div class="container__box">
+          <button class="btn btn--next">continue</button>
+      </div>
+    </div>
+    <p>And this is my SVG Button animation</p>
+    <div class="container">
+      <div class="container__box">
+        <svg class="svg" width="325px" height="80px" xmlns="http://www.w3.org/2000/svg">
+          <g class="svg__btn">
+            <rect class="rect-active" x="50%" y="0" width="0%" height="100%" fill="#ffffff">
+              <animate attributeName="x" begin="rect.mouseover" dur="0.5s" from="50%" to="0" fill="freeze"></animate>
+              <animate attributeName="x" begin="rect.mouseout" dur="0.5s" from="0" to="50%" fill="freeze"></animate>
+              <animate attributeName="width" begin="rect.mouseover" dur="0.5s" from="0%" to="100%" fill="freeze"></animate>
+              <animate attributeName="width" begin="rect.mouseout" dur="0.5s" from="100%" to="0%" fill="freeze"></animate>
+            </rect>
+            <text class="btn__text" fill=#ffffff x="50%" y="60%" text-anchor="middle">Continue
+              <animate attributeName="fill" begin="rect.mouseover" dur="0.5s" from="#ffffff" to="#9e54bd" fill="freeze"></animate>
+              <animate attributeName="fill" begin="rect.mouseout" dur="0.5s" from="#9e54bd" to="#ffffff" fill="freeze"></animate>
+            </text>
+            <rect class="rect-invisible" id="rect" x="0" y="0" width="100%" height="100%" rx="7"ry="7" fill="transparent" stroke="#ffffff" stroke-width="7"></rect>
+          </g>
+        </svg>
+      </div>
+    </div>
+
   </body>
 </html>

@@ -6,22 +6,18 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
 .kiwi-tag {
   fill:orange;
 }
 .lake {
   fill:blue;
 }
-
 .kiwi-object {
   width: 150px;
 }
-
 .kiwi-base64 {
   width: 150px;
 }
-
 .circle-anim {
   animation-duration: 2s;
   animation-name: circleanim;
@@ -36,7 +32,7 @@ body {
       transform: rotate(360deg);
     }
   }
-
+/*for 4*/
 .fourthfield {
   margin: 0;
   padding: 0;
@@ -67,6 +63,64 @@ body {
     height: 200px;
   }
 }
-
-/*reload file
-*/
+/*for 5*/
+.container {
+  height: 100%;
+  position: relative;
+}
+.container__box {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #9e54bd;
+  position: relative;
+  z-index: 5;
+}
+.btn {
+  background: none;
+  cursor: pointer;
+  padding: 25px 100px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border: 3px solid #fff;
+  color: #fff;        
+  position: relative;
+  transition: 0.5s;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn--next {
+  overflow: hidden;
+}
+.btn--next:after { /*можна використати transform: scale(500), задавши ширину 2п, висоту 1п, опасіті 0, а в :hover:after включити опасіті;*/
+  width: 0;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  transform: translateX(-50%) translateY(-50%); /*можна використати transform: scale(3);*/
+}
+.btn--next:hover,
+.btn--next:active {
+  color: #9e54bd;
+  border: 3px solid transparent;
+}
+.btn--next:hover:after {
+  width: 100%;
+  opacity: 0.95;
+}
+.btn__text {
+  font-family: Arial;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
