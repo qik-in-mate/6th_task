@@ -1,19 +1,19 @@
-body {
+.body {
   margin: 0 auto;
   padding-left: 5px;
 }
-.firstfield {
+.first-field {
   display: flex;
   flex-wrap: wrap;
 }
-.firstfield > svg {
+.svg-ff {
   padding: 1px;
 }
 .kiwi-tag {
-  fill:orange;
+  fill: orange;
 }
 .lake {
-  fill:blue;
+  fill: blue;
 }
 .kiwi-object {
   width: 150px;
@@ -24,18 +24,18 @@ body {
 /*for 3*/
 .circle-anim {
   animation-duration: 2s;
-  animation-name: circleanim;
+  animation-name: rotate-loading-circle;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-  @keyframes circleanim {
-    from {
-      transform: rotate(0deg);
-    }
-    to { 
-      transform: rotate(360deg);
-    }
+@keyframes rotate-loading-circle {
+  from {
+    transform: rotate(0deg);
   }
+  to { 
+    transform: rotate(360deg);
+  }
+}
 /*for 4*/
 @media all and (min-width: 1800px) {
   .svg-resp {
@@ -101,13 +101,13 @@ body {
 .btn--next {
   overflow: hidden;
 }
-.btn--next:after { /*можна використати transform: scale(500), задавши ширину 2п, висоту 1п, опасіті 0, а в :hover:after включити опасіті;*/
+.btn--next:after { /*we can use another method - transform: scale(500), w:2px;, h:1px, opacity:0, and in :hover:after include opacity:1;*/
   width: 0;
   height: 100%;
   top: 50%;
   left: 50%;
   background: #ffffff;
-  transform: translateX(-50%) translateY(-50%); /*можна використати transform: scale(3);*/
+  transform: translateX(-50%) translateY(-50%); /*we can use transform: scale(3);*/
 }
 .btn--next:hover,
 .btn--next:active {
